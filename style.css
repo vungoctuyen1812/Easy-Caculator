@@ -1,10 +1,14 @@
 {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: font-family: 'Spartan', sans-serif;
 }
 body{
-	background-image: url('./background.jpg')
+	background: #30E8BF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .data{
@@ -13,6 +17,7 @@ body{
 }
 
 .container-caculators{
+	box-shadow: 0px 0px 30px ;
 	padding: 1px;
 	border-radius: 5px;
 	margin: 100px auto;
@@ -28,10 +33,11 @@ body{
 
 
 button{
+
 	padding: 20px;
-	font-size: 30px;
-	color: black;
-	background-color: #B3BFB8;
+	font-size: 50px;
+	color: white;
+	background-color: #1B4079;
 	opacity: 0.7;
 	transition: all 0.2s ease-in-out;
 }
@@ -40,12 +46,12 @@ button:hover{
 	opacity: 1;
 }
 button:focus{
-	background-color: #7E8D85;
+	background-color: #1B4079;
 	opacity: 1;
 }
 
 #reset{
-	background-color: #3C493F;
+	background-color: #163564;
 	color: white;
 }
 
@@ -55,18 +61,19 @@ button:focus{
 }
 
 #input-data{
+	
 	font-weight: bold;
 	font-size: 30px;
 }
 
 #equal{
-	background-color: #7E8D85;
+	background-color: #163564;
 	color: white;
 }
 
 .text{
 	margin-top: 30px;
 	opacity: 0.5;
-	font-size: 50px;
+	font-size: 30px;
 	text-align: center;
 }
