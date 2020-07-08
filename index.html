@@ -4,8 +4,11 @@
 	<title>Caculator</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap" rel="stylesheet">
+	
 </head>
 <body>
+
 	<div class="total container-caculators">
 		<div class="container ">
 		<div class="data">
@@ -31,8 +34,29 @@
 			<button  class="col-9 caculator-button number-button">0</button>
 			<button id="equal" class="col-3 caculator-button">=</button>
 		</div>
-		<div class="text">CACULATOR</div>
+		<div class="text">
+			<span class="animate"></span>
+		</div>
 	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 	<script type="text/javascript" src="js.js"></script>
+	
+	<script>
+		
+		var typed = new Typed('.animate', {
+			strings: [
+				"This is a <strong> caculator </strong>",
+				"これは<strong>カキュレーター</strong>です",
+				"Đây là một <strong>chiếc máy tính</strong>",
+				"这是一<strong>辆卡车</strong>"
+			],
+			typeSpeed: 50,
+			backSpeed: 50,
+			loop: true
+		});
+	</script>
+
+	
 </body>
 </html>
